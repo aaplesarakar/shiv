@@ -8,7 +8,7 @@
     <meta name="google-site-verification" content="k1O-wddjTnajgfr55cWwwG7oUgaFjNKFZiFgknBWxtQ"/>
     <script language="JavaScript1.1">
     //specify interval between slide (in mili seconds)
-    // var slidespeed=3000
+    var slidespeed=3000
     
     //specify images
     var slideimages=new Array("gallery02.jpg","gallery03.jpg","gallery04.jpg","gallery05.jpg","gallery06.jpg","gallery01.jpg")
@@ -140,23 +140,22 @@ a:active {
             <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td>
-                   
-<script language="JavaScript1.1">
-
-var whichimage=0
-var blenddelay=(ie)? document.images.slide.filters[0].duration*1000 : 0
-function slideit(){
-if (!document.images) return
-if (ie) document.images.slide.filters[0].apply()
-document.images.slide.src=imageholder[whichimage].src
-if (ie) document.images.slide.filters[0].play()
-whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0
-setTimeout("slideit()",slidespeed+blenddelay)
-}
-slideit()
-</script>
-</div>
-</td>
+                  <div align="center"><img src="gallery01.jpg" name="slide" border=0 style="filter:blendTrans(duration=3)">
+                <script language="JavaScript1.1">
+              var whichimage=0
+              var blenddelay=(ie)? document.images.slide.filters[0].duration*1000 : 0
+              function slideit(){
+              if (!document.images) return
+              if (ie) document.images.slide.filters[0].apply()
+              document.images.slide.src=imageholder[whichimage].src
+              if (ie) document.images.slide.filters[0].play()
+              whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0
+              setTimeout("slideit()",slidespeed+blenddelay)
+              }
+               slideit()
+                </script>
+                  </div>
+                      </td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
@@ -370,7 +369,7 @@ slideit()
 </table>
 
 
-<map name="Map" id="Map"><area shape="rect" coords="73,66,111,116" href="https://www.facebook.com/mayur.apar" target="_blank" />
+<map name="Map" id="Map"><area shape="rect" coords="73,66,111,116" href="https://www.facebook.com/profile.php?id=100078400952538" target="_blank" />
 <area shape="rect" coords="114,65,151,113" href="https://www.youtube.com/" target="_blank" />
 </map></body>
 
