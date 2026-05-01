@@ -1,19 +1,17 @@
 *
 
 
+
+body
+
+
 @media (max-width: 768px) {
     #wrapper { width: 95%; }
     #leftcolumn { width: 100%; float: none; }
     #rightcolumn { width: 100%; }
 }
 
-
-
 {
-    padding: 0;
-    margin: 0;
-}
-body {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 14px;
     background-image: url(images/head.jpg);
