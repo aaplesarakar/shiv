@@ -9,45 +9,62 @@
   <link rel="icon" href="favicon.ico">
   <meta name="google-site-verification" content="k1O-wddjTnajgfr55cWwwG7oUgaFjNKFZiFgknBWxtQ" />
   <title>शिवस्वराज्य प्रतिष्ठान</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="..." crossorigin="anonymous">
-  <!-- consider moving your custom styles to a separate CSS file -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       background-color: #fa7202;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
     }
+
     .container-custom {
       max-width: 905px;
       width: 100%;
       padding: 20px;
+      box-sizing: border-box;
     }
+
+    figure {
+      margin: 0;
+    }
+
     .homepage-img {
       width: 100%;
       height: auto;
       display: block;
+      max-width: 100%;
     }
+
     .registration-text {
-      color: #f56403; /* Ensure sufficient contrast! */
+      color: #2f1300;
       font-size: 15px;
       text-align: center;
       margin-top: 20px;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <main class="container-custom" role="main">
-    
     <figure>
-  <img src="home/images/homepage_final.png" alt="शिवस्वराज्य प्रतिष्ठान का होम पृष्ठ" class="homepage-img" loading="lazy" usemap="#Map">
-  <map name="Map" id="Map">
-    <area shape="rect" coords="0,0,1000,1000" href="home/index.html" alt="होम पृष्ठ पर जाए��">
-  </map>
-</figure>
-    <p class="registration-text">नोंदणी क्र : </p>
+      <img src="home/images/homepage_final.png" alt="शिवस्वराज्य प्रतिष्ठान का होम पृष्ठ" class="homepage-img" loading="lazy" usemap="#Map">
+      <map name="Map" id="Map">
+        <area shape="rect" coords="0,0,1000,1000" href="home/index.html" alt="होम पृष्ठावर जा" aria-label="होम पृष्ठावर जा">
+      </map>
+    </figure>
+    <p class="registration-text">नोंदणी क्र :</p>
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
 </body>
 </html>
